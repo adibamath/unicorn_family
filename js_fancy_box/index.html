@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>JS fancybox - Lightbox</title>
+
+<!--NIEMALS vergessen!!!-->
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+	
+<!--JS-Bibliothek muss zuerst im head-bereich aufgerufen werden-->
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	
+<!--danach wird das script des Entwicklers geladen-->
+<script src="dist/jquery.fancybox.js"></script>
+	
+<!--Stylesheet der Fancybox-->
+<link href="dist/jquery.fancybox.css" rel="stylesheet" type="text/css">	
+
+<!--Mein eigenes Stylesheet wird als letztes im head-Bereich aufgerufen	-->
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+<div id="container">
+	
+<nav>
+	<ul>
+		<li>Listenpunkt</li>
+	</ul>	
+</nav>	
+	
+	
+	<header>
+
+<a href="#" title="zurück zum START"><img src="bilder/logo.svg" name="Unser toller Webseiten Titel" title="Unser toller Webseiten Titel" alt="logo"><span
+>Unser toller Webseiten Titel</span></a>
+
+</header>
+	
+	<h1>JS fancybox - Lightbox</h1>
+	
+	<main>
+	
+		<section class="eins">
+			<img src="bilder/logo.svg" alt="Logo">
+		</section>
+		
+		<section>
+			<p>Platz für die Fancybox</p>
+			
+			<h2>Galerie 1</h2>
+			
+				<ul class="galerie">
+					<!--das Attribut data-fancybox="" aktiviert das script des Entwicklers-->
+					<!--das Attribut data-caption="" aktiviert die Bildunterschrift-->
+					
+					
+					<li> 
+						<!--das Attribut data-fancybox="galerie1" aktiviert die Galeriefunktion-->
+						<a href="bilder/01.jpg" data-fancybox="galerie1" data-caption="Erste Bildunterschrift">
+							<img src="bilder/01.jpg" alt="Bild 1">
+						</a>
+					</li>
+					
+					<li>
+						<a href="bilder/02.jpg" data-fancybox="galerie1" data-caption="Zweite Bildunterschrift">
+							<img src="bilder/02.jpg" alt="Bild 2">
+						</a>
+					</li>
+					
+					<li>
+						<a href="bilder/03.jpg" data-fancybox="galerie1" data-caption="Dritte Bildunterschrift">
+							<img src="bilder/03.jpg" alt="Bild 3">
+						</a>
+					</li>
+					
+					<li>
+						<a href="bilder/04.jpg" data-fancybox="galerie1" data-caption="Vierte Bildunterschrift">
+							<img src="bilder/04.jpg" alt="Bild 4">
+						</a>
+					</li>
+				</ul>
+			
+		</section>
+		
+		<section>
+			<p>Platz für die Fancybox</p>
+			
+			<h2>Galerie 2</h2>
+			
+				<ul class="galerie">
+					<!--das Attribut data-fancybox="" aktiviert das script des Entwicklers-->
+					<!--das Attribut data-caption="" aktiviert die Bildunterschrift-->
+					
+					
+					<li> 
+						<!--das Attribut data-fancybox="galerie1" aktiviert die Galeriefunktion-->
+						<a href="bilder/05.jpg" data-fancybox="galerie2" data-caption="Fünfte Bildunterschrift">
+							<img src="bilder/05.jpg" alt="Bild 5">
+						</a>
+					</li>
+					
+					<li>
+						<a href="bilder/06.jpg" data-fancybox="galerie2" data-caption="Sechste Bildunterschrift">
+							<img src="bilder/06.jpg" alt="Bild 6">
+						</a>
+					</li>
+					
+					<li>
+						<a href="bilder/07.jpg" data-fancybox="galerie2" data-caption="Siebte Bildunterschrift">
+							<img src="bilder/07.jpg" alt="Bild 7">
+						</a>
+					</li>
+					
+					<li>
+						<a href="bilder/08.jpg" data-fancybox="galerie2" data-caption="Achte Bildunterschrift">
+							<img src="bilder/08.jpg" alt="Bild 8">
+						</a>
+					</li>
+				</ul>
+			
+		</section>
+	
+	
+	</main>
+	
+</div>
+	
+</body>
+</html>

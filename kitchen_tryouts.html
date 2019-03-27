@@ -9,24 +9,28 @@
     <meta name="author" content="">
 
     <title>The Unicorn Family</title>
+	
+	<!--Favicon-->  
+	<link rel="icon" type="image/x-icon" href="vendor/favicon_package_v0.16/favicon.ico">
+   
 
     <!--JS-Bibliothek muss zuerst im head-bereich aufgerufen werden-->
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 
     <!--danach wird das script des Entwicklers geladen-->
-    <script src="../unicorn_family-master/unicorn_family/vendor/jquery_fancybox/jquery.fancybox.js"></script>
+    <script src="vendor/jquery_fancybox/jquery.fancybox.js"></script>
 
     <!--Stylesheet der Fancybox-->
-    <link href="../unicorn_family-master/unicorn_family/vendor/jquery_fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="vendor/jquery_fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css">
 
 
     <!-- Bootstrap core CSS -->
-    <link href="../unicorn_family-master/unicorn_family/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../unicorn_family-master/unicorn_family/css/blog-post.css" rel="stylesheet">
+    <link href="css/blog-post.css" rel="stylesheet">
     <!--Einige CSS-->
-    <link href="../unicorn_family-master/unicorn_family/style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link href="kitchen_tryout_fgrid.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -35,14 +39,14 @@
 <div id="container">
 
     <div class="row">
-        <img class="img-fluid rounded" src="../unicorn_family-master/unicorn_family/bilder/logo/finalogo.png" alt="">
+        <img class="img-fluid rounded" src="bilder/logo/finalogo.png" alt="">
 
     </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">A Family Blog-Site</a>
+            <a class="navbar-brand" href="index.html">A Family Blog-Site</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,18 +54,18 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" target="_blank">Home
+                        <a class="nav-link" href="index.html">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="about_us.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="travel.html" target="_blank">Travel</a>
+                        <a class="nav-link" href="travel.html">Travel</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="kitchen_tryouts.html" target="_blank">Kitchen Tryouts</a>
+                        <a class="nav-link" href="kitchen_tryouts.html">Kitchen Tryouts</a>
                     </li>
                 </ul>
             </div>
@@ -76,9 +80,9 @@
         <div class="col-md-8 my-4">
             <!--Each row will consists a Big Photo, Description and a photo Gallery-->
             <!--Row 1-->
-            <div class="row">
+            <div>
 
-                      
+
                 <div class="left">
                     <img class="travel_intro_photo" src="bilder/food_cover.jpg" alt="">
                 </div>
@@ -86,19 +90,19 @@
                     <h5>Kitchen Tryouts!</h5>
                     <p align="justify">Coming from South Asia, we have always been exposed to various cuisines with dynamic flavours. Both my husband and I love to cook and we bond well for the love of eating! Cooking is something very close to our heart which connects us to our roots and culture. We love cooking Bangladeshi food, we also love experimenting with fusion recipes from continental cuisines. Everytime we travel and eat something new, we try to recreate that recipe with a bit of our Asian touch! Here are some of the photos of our kitchen tryouts.  </p>
 					<hr>
-					
+
                 </div>
-				
+
 				<h3 class="photo_gallery">Photo Gallery</h3>
 
                 <!--Gallery should come over here-->
-                <div class="row">
+                
 
                     <ul class="galerie">
                         <!--das Attribut data-fancybox="" aktiviert das script des Entwicklers-->
                         <!--das Attribut data-caption="" aktiviert die Bildunterschrift-->
-						
-						
+
+
 
                         <li>
                             <!--das Attribut data-fancybox="galerie1" aktiviert die Galeriefunktion-->
@@ -108,9 +112,9 @@
                         </li>
 
                         <li>
-                            <a href="bilder/food_03.jpg" data-fancybox="galerie1"
-                               data-caption="Egg Korma">
-                                <img src="bilder/food_03.jpg" alt="Bild 2">
+                            <a href="bilder/food_08.jpg" data-fancybox="galerie1"
+                               data-caption="Honey Mustard Chicken">
+                                <img src="bilder/food_08.jpg" alt="Bild 2">
                             </a>
                         </li>
 
@@ -127,14 +131,14 @@
                                 <img src="bilder/food_05.jpg" alt="Bild 2">
                             </a>
                         </li>
-                    </ul>
-                </div>
-
+                    
                
 
-                <div class="row">
 
-                    <ul class="galerie">
+
+                
+
+                    
                         <!--das Attribut data-fancybox="" aktiviert das script des Entwicklers-->
                         <!--das Attribut data-caption="" aktiviert die Bildunterschrift-->
 
@@ -158,20 +162,27 @@
                                 <img src="bilder/food_09.jpg" alt="Bild 2">
                             </a>
                         </li>
-						
+
 						<li>
                             <a href="bilder/food_13.jpg" data-fancybox="galerie1"
                                data-caption="Mini Pudding">
                                 <img src="bilder/food_13.jpg" alt="Bild 2">
                             </a>
                         </li>
+						
+						<li>
+                            <a href="bilder/food_10.jpg" data-fancybox="galerie1"
+                               data-caption="Cream of Mushroom Soup">
+                                <img src="bilder/food_10.jpg" alt="Bild 2">
+                            </a>
+                        </li>
 
-                       
+
                     </ul>
-                </div>
+              
+
 
                 
-                <hr>
             </div>
 
             <!--Row 2-->
@@ -197,14 +208,14 @@
             <!--Row 3-->
             <hr>
             <div class="row">
-				
-				
 
-	
-	
 
-                
-                
+
+
+
+
+
+
             </div>
 
             </div>
@@ -267,9 +278,9 @@
     <footer class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright ©The Unicorn Family, All Rights Reserved | Designed by Adiba Amath</p>
-			
+
 			<p class="m-0 text-center text-white"><a href="privacy_policy.html" target="_blank">Click here to know my Privacy Policy</a></p>
-			
+
       </div>
         <!-- /.container -->
     </footer>
@@ -279,8 +290,8 @@
 
 <!-- Bootstrap core JavaScript -->
 
-<script src="../unicorn_family-master/unicorn_family/vendor/jquery/jquery.min.js"></script>
-<script src="../unicorn_family-master/unicorn_family/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
